@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjpowernode.crm.workbench.mapper.UsersMapper">
+  <resultMap id="BaseResultMap" type="com.bjpowernode.crm.workbench.pojo.Users">
+    <id column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="user_vip" jdbcType="BOOLEAN" property="userVip" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    user_id, user_name, user_vip
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from users
+    where user_id = #{userId,jdbcType=INTEGER}
+  </select>
+  <select id="selectByName" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from users
+    where user_name = #{userName,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from users
+    where user_id = #{userId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="user_id" keyProperty="userId" parameterType="com.bjpowernode.crm.workbench.pojo.Users" useGeneratedKeys="true">
+    insert into users (user_name, user_vip)
+    values (#{userName,jdbcType=VARCHAR}, #{userVip,jdbcType=BOOLEAN})
+  </insert>
+  <insert id="insertSelective" keyColumn="user_id" keyProperty="userId" parameterType="com.bjpowernode.crm.workbench.pojo.Users" useGeneratedKeys="true">
+    insert into users
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userName != null">
+        user_name,
+      </if>
+      <if test="userVip != null">
+        user_vip,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userName != null">
+        #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userVip != null">
+        #{userVip,jdbcType=BOOLEAN},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.bjpowernode.crm.workbench.pojo.Users">
+    update users
+    <set>
+      <if test="userName != null">
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="userVip != null">
+        user_vip = #{userVip,jdbcType=BOOLEAN},
+      </if>
+    </set>
+    where user_id = #{userId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.bjpowernode.crm.workbench.pojo.Users">
+    update users
+    set user_name = #{userName,jdbcType=VARCHAR},
+      user_vip = #{userVip,jdbcType=BOOLEAN}
+    where user_id = #{userId,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,85 @@
+2022-07-09 15:20:28 [main] INFO  ClassPathXmlApplicationContext:583 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1fb700ee: startup date [Sat Jul 09 15:20:28 CST 2022]; root of context hierarchy
+2022-07-09 15:20:28 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2022-07-09 15:20:28 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext-datasource.xml]
+2022-07-09 15:20:29 [main] INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2022-07-09 15:30:09 [main] INFO  ClassPathXmlApplicationContext:583 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1fb700ee: startup date [Sat Jul 09 15:30:09 CST 2022]; root of context hierarchy
+2022-07-09 15:30:09 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2022-07-09 15:30:09 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext-datasource.xml]
+2022-07-09 15:30:10 [main] INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2022-07-09 15:36:50 [main] INFO  ClassPathXmlApplicationContext:583 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1fb700ee: startup date [Sat Jul 09 15:36:50 CST 2022]; root of context hierarchy
+2022-07-09 15:36:50 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2022-07-09 15:36:50 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext-datasource.xml]
+2022-07-09 15:36:51 [main] INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2022-07-09 16:21:19 [main] INFO  ClassPathXmlApplicationContext:583 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@306cf3ea: startup date [Sat Jul 09 16:21:19 CST 2022]; root of context hierarchy
+2022-07-09 16:21:19 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2022-07-09 16:21:20 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext-datasource.xml]
+2022-07-09 16:21:20 [main] INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2022-07-09 16:37:26 [main] INFO  ClassPathXmlApplicationContext:583 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1fb700ee: startup date [Sat Jul 09 16:37:26 CST 2022]; root of context hierarchy
+2022-07-09 16:37:26 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2022-07-09 16:37:26 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext-datasource.xml]
+2022-07-09 16:37:27 [main] INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2022-07-09 16:38:21 [main] INFO  ClassPathXmlApplicationContext:583 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1fb700ee: startup date [Sat Jul 09 16:38:21 CST 2022]; root of context hierarchy
+2022-07-09 16:38:21 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2022-07-09 16:38:22 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext-datasource.xml]
+2022-07-09 16:38:22 [main] INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2022-07-09 16:44:12 [main] INFO  ClassPathXmlApplicationContext:583 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1fb700ee: startup date [Sat Jul 09 16:44:12 CST 2022]; root of context hierarchy
+2022-07-09 16:44:12 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2022-07-09 16:44:12 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext-datasource.xml]
+2022-07-09 16:44:13 [main] INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2022-07-09 16:44:58 [main] INFO  ClassPathXmlApplicationContext:583 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4a668b6e: startup date [Sat Jul 09 16:44:58 CST 2022]; root of context hierarchy
+2022-07-09 16:44:59 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2022-07-09 16:44:59 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext-datasource.xml]
+2022-07-09 16:44:59 [main] INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2022-07-09 16:47:24 [main] INFO  ClassPathXmlApplicationContext:583 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4a668b6e: startup date [Sat Jul 09 16:47:24 CST 2022]; root of context hierarchy
+2022-07-09 16:47:24 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2022-07-09 16:47:25 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext-datasource.xml]
+2022-07-09 16:47:25 [main] INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2022-07-09 18:02:35 [main] INFO  ClassPathXmlApplicationContext:583 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4a668b6e: startup date [Sat Jul 09 18:02:35 CST 2022]; root of context hierarchy
+2022-07-09 18:02:35 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2022-07-09 18:02:35 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext-datasource.xml]
+2022-07-09 18:02:36 [main] INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2022-07-09 18:03:33 [main] INFO  ClassPathXmlApplicationContext:583 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4a668b6e: startup date [Sat Jul 09 18:03:33 CST 2022]; root of context hierarchy
+2022-07-09 18:03:33 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2022-07-09 18:03:33 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext-datasource.xml]
+2022-07-09 18:03:33 [main] INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2022-07-09 18:03:34 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2022-07-09 18:03:35 [main] INFO  SQLErrorCodesFactory:127 - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2022-07-09 18:08:43 [main] INFO  ClassPathXmlApplicationContext:583 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4a668b6e: startup date [Sat Jul 09 18:08:43 CST 2022]; root of context hierarchy
+2022-07-09 18:08:43 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2022-07-09 18:08:43 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext-datasource.xml]
+2022-07-09 18:08:44 [main] INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2022-07-09 18:08:45 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2022-07-09 18:08:45 [main] INFO  SQLErrorCodesFactory:127 - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2022-07-09 18:12:03 [main] INFO  ClassPathXmlApplicationContext:583 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4a668b6e: startup date [Sat Jul 09 18:12:03 CST 2022]; root of context hierarchy
+2022-07-09 18:12:03 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2022-07-09 18:12:03 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext-datasource.xml]
+2022-07-09 18:12:04 [main] INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2022-07-09 23:03:23 [main] INFO  ClassPathXmlApplicationContext:583 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4a668b6e: startup date [Sat Jul 09 23:03:23 CST 2022]; root of context hierarchy
+2022-07-09 23:03:23 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2022-07-09 23:03:23 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext-datasource.xml]
+2022-07-09 23:03:24 [main] INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2022-07-09 23:28:31 [main] INFO  ClassPathXmlApplicationContext:583 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4a668b6e: startup date [Sat Jul 09 23:28:31 CST 2022]; root of context hierarchy
+2022-07-09 23:28:31 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2022-07-09 23:28:31 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext-datasource.xml]
+2022-07-09 23:28:32 [main] INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2022-07-09 23:46:23 [main] INFO  ClassPathXmlApplicationContext:583 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4a668b6e: startup date [Sat Jul 09 23:46:23 CST 2022]; root of context hierarchy
+2022-07-09 23:46:24 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2022-07-09 23:46:24 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext-datasource.xml]
+2022-07-09 23:46:24 [main] INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2022-07-10 10:24:08 [main] INFO  ClassPathXmlApplicationContext:583 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4a668b6e: startup date [Sun Jul 10 10:24:08 CST 2022]; root of context hierarchy
+2022-07-10 10:24:08 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2022-07-10 10:24:08 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext-datasource.xml]
+2022-07-10 10:24:08 [main] INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2022-07-10 10:49:11 [main] INFO  ClassPathXmlApplicationContext:583 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4a668b6e: startup date [Sun Jul 10 10:49:11 CST 2022]; root of context hierarchy
+2022-07-10 10:49:11 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2022-07-10 10:49:11 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext-datasource.xml]
+2022-07-10 10:49:11 [main] INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2022-07-10 10:49:11 [main] WARN  ClassPathXmlApplicationContext:551 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'usersMapper' defined in file [D:\Coding\wyymusic\target\classes\com\bjpowernode\crm\workbench\mapper\UsersMapper.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext-datasource.xml]: Invocation of init method failed; nested exception is java.io.FileNotFoundException: class path resource [mybatis-config.xml] cannot be opened because it does not exist
+2022-07-10 10:51:22 [main] INFO  ClassPathXmlApplicationContext:583 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4a668b6e: startup date [Sun Jul 10 10:51:22 CST 2022]; root of context hierarchy
+2022-07-10 10:51:22 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2022-07-10 10:51:22 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext-datasource.xml]
+2022-07-10 10:51:22 [main] INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver
+2022-07-10 10:51:44 [main] INFO  ClassPathXmlApplicationContext:583 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4a668b6e: startup date [Sun Jul 10 10:51:44 CST 2022]; root of context hierarchy
+2022-07-10 10:51:44 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2022-07-10 10:51:44 [main] INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext-datasource.xml]
+2022-07-10 10:51:45 [main] INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.cj.jdbc.Driver

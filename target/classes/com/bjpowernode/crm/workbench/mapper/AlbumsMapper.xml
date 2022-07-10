@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjpowernode.crm.workbench.mapper.AlbumsMapper">
+  <resultMap id="BaseResultMap" type="com.bjpowernode.crm.workbench.pojo.Albums">
+    <id column="album_id" jdbcType="INTEGER" property="albumId" />
+    <result column="album_name" jdbcType="VARCHAR" property="albumName" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    album_id, album_name
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from albums
+    where album_id = #{albumId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from albums
+    where album_id = #{albumId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="album_id" keyProperty="albumId" parameterType="com.bjpowernode.crm.workbench.pojo.Albums" useGeneratedKeys="true">
+    insert into albums (album_name)
+    values (#{albumName,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" keyColumn="album_id" keyProperty="albumId" parameterType="com.bjpowernode.crm.workbench.pojo.Albums" useGeneratedKeys="true">
+    insert into albums
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="albumName != null">
+        album_name,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="albumName != null">
+        #{albumName,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.bjpowernode.crm.workbench.pojo.Albums">
+    update albums
+    <set>
+      <if test="albumName != null">
+        album_name = #{albumName,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where album_id = #{albumId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.bjpowernode.crm.workbench.pojo.Albums">
+    update albums
+    set album_name = #{albumName,jdbcType=VARCHAR}
+    where album_id = #{albumId,jdbcType=INTEGER}
+  </update>
+</mapper>

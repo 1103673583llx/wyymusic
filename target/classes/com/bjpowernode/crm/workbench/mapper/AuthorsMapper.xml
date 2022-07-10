@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjpowernode.crm.workbench.mapper.AuthorsMapper">
+  <resultMap id="BaseResultMap" type="com.bjpowernode.crm.workbench.pojo.Authors">
+    <id column="author_id" jdbcType="INTEGER" property="authorId" />
+    <result column="author_name" jdbcType="VARCHAR" property="authorName" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    author_id, author_name
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from authors
+    where author_id = #{authorId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from authors
+    where author_id = #{authorId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="author_id" keyProperty="authorId" parameterType="com.bjpowernode.crm.workbench.pojo.Authors" useGeneratedKeys="true">
+    insert into authors (author_name)
+    values (#{authorName,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" keyColumn="author_id" keyProperty="authorId" parameterType="com.bjpowernode.crm.workbench.pojo.Authors" useGeneratedKeys="true">
+    insert into authors
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="authorName != null">
+        author_name,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="authorName != null">
+        #{authorName,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.bjpowernode.crm.workbench.pojo.Authors">
+    update authors
+    <set>
+      <if test="authorName != null">
+        author_name = #{authorName,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where author_id = #{authorId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.bjpowernode.crm.workbench.pojo.Authors">
+    update authors
+    set author_name = #{authorName,jdbcType=VARCHAR}
+    where author_id = #{authorId,jdbcType=INTEGER}
+  </update>
+</mapper>

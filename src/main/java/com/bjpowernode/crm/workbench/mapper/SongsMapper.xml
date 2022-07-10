@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjpowernode.crm.workbench.mapper.SongsMapper">
+  <resultMap id="BaseResultMap" type="com.bjpowernode.crm.workbench.pojo.Songs">
+    <id column="song_id" jdbcType="INTEGER" property="songId" />
+    <result column="song_name" jdbcType="VARCHAR" property="songName" />
+    <result column="song_time" jdbcType="VARCHAR" property="songTime" />
+    <result column="song_vip" jdbcType="BOOLEAN" property="songVip" />
+    <result column="author_name" jdbcType="VARCHAR" property="authorName" />
+    <result column="album_name" jdbcType="VARCHAR" property="albumName" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    song_id, song_name, song_time, song_vip, author_name, album_name
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from songs
+    where song_id = #{songId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from songs
+    where song_id = #{songId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="song_id" keyProperty="songId" parameterType="com.bjpowernode.crm.workbench.pojo.Songs" useGeneratedKeys="true">
+    insert into songs (song_name, song_time, song_vip, 
+      author_name, album_name)
+    values (#{songName,jdbcType=VARCHAR}, #{songTime,jdbcType=VARCHAR}, #{songVip,jdbcType=BOOLEAN}, 
+      #{authorName,jdbcType=VARCHAR}, #{albumName,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" keyColumn="song_id" keyProperty="songId" parameterType="com.bjpowernode.crm.workbench.pojo.Songs" useGeneratedKeys="true">
+    insert into songs
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="songName != null">
+        song_name,
+      </if>
+      <if test="songTime != null">
+        song_time,
+      </if>
+      <if test="songVip != null">
+        song_vip,
+      </if>
+      <if test="authorName != null">
+        author_name,
+      </if>
+      <if test="albumName != null">
+        album_name,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="songName != null">
+        #{songName,jdbcType=VARCHAR},
+      </if>
+      <if test="songTime != null">
+        #{songTime,jdbcType=VARCHAR},
+      </if>
+      <if test="songVip != null">
+        #{songVip,jdbcType=BOOLEAN},
+      </if>
+      <if test="authorName != null">
+        #{authorName,jdbcType=VARCHAR},
+      </if>
+      <if test="albumName != null">
+        #{albumName,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.bjpowernode.crm.workbench.pojo.Songs">
+    update songs
+    <set>
+      <if test="songName != null">
+        song_name = #{songName,jdbcType=VARCHAR},
+      </if>
+      <if test="songTime != null">
+        song_time = #{songTime,jdbcType=VARCHAR},
+      </if>
+      <if test="songVip != null">
+        song_vip = #{songVip,jdbcType=BOOLEAN},
+      </if>
+      <if test="authorName != null">
+        author_name = #{authorName,jdbcType=VARCHAR},
+      </if>
+      <if test="albumName != null">
+        album_name = #{albumName,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where song_id = #{songId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.bjpowernode.crm.workbench.pojo.Songs">
+    update songs
+    set song_name = #{songName,jdbcType=VARCHAR},
+      song_time = #{songTime,jdbcType=VARCHAR},
+      song_vip = #{songVip,jdbcType=BOOLEAN},
+      author_name = #{authorName,jdbcType=VARCHAR},
+      album_name = #{albumName,jdbcType=VARCHAR}
+    where song_id = #{songId,jdbcType=INTEGER}
+  </update>
+</mapper>
